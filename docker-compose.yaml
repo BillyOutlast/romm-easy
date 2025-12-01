@@ -68,7 +68,7 @@ services:
       - ${SEGA_Mega_Drive_PATH}:/romm/library/Mega_Drive
       - ${SEGA_Pico_PATH}:/romm/library/Pico
       - ${SEGA_Saturn_PATH}:/romm/library/Saturn
-      - ${SEGA_SG-1000_PATH}:/romm/library/SG-1000
+      - ${SEGA_SG_1000_PATH}:/romm/library/SG_1000
     #ports:
     #  - 80:8080
     depends_on:
