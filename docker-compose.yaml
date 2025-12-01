@@ -20,6 +20,10 @@ services:
       - RETROACHIEVEMENTS_API_KEY=${RETROACHIEVEMENTS_API_KEY} # https://docs.romm.app/latest/Getting-Started/Metadata-Providers/#retroachievements
       - STEAMGRIDDB_API_KEY=${STEAMGRIDDB_API_KEY} # https://docs.romm.app/latest/Getting-Started/Metadata-Providers/#steamgriddb
       - HASHEOUS_API_ENABLED=${HASHEOUS_API_ENABLED} # https://docs.romm.app/latest/Getting-Started/Metadata-Providers/#hasheous
+      - PLAYMATCH_API_ENABLED=${PLAYMATCH_API_ENABLED} # https://docs.romm.app/latest/Getting-Started/Metadata-Providers/#playmatch
+      # IGDB API Credentials
+      - IGDB_CLIENT_ID=${IGDB_CLIENT_ID} # https://docs.romm.app/latest/Getting-Started/Metadata-Providers/#igdb
+      - IGDB_CLIENT_SECRET=${IGDB_CLIENT_SECRET} # https://docs.romm.app/latest/Getting-Started/Metadata-Providers/#igdb
     volumes:
       - ./romm/romm_resources:/romm/resources # Resources fetched from IGDB (covers, screenshots, etc.)
       - ./romm/romm_redis_data:/redis-data # Cached data for background tasks
