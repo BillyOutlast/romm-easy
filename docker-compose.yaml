@@ -40,9 +40,9 @@ services:
     environment:
       - HOSTNAME=romm-db
       - MARIADB_ROOT_PASSWORD= # Use a unique, secure password
-      - MARIADB_DATABASE=romm
-      - MARIADB_USER=romm-user
-      - MARIADB_PASSWORD=
+      - MARIADB_DATABASE=${DB_NAME}
+      - MARIADB_USER=${DB_USER}
+      - MARIADB_PASSWORD=${DB_PASSWD}
     volumes:
       - ./romm/mysql_data:/var/lib/mysql
     security_opt:
