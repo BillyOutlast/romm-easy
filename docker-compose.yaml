@@ -43,6 +43,7 @@ services:
       - MARIADB_DATABASE=${DB_NAME}
       - MARIADB_USER=${DB_USER}
       - MARIADB_PASSWORD=${DB_PASSWD}
+      - MARIADB_ROOT_PASSWORD=${DB_ROOT_PASSWD}
     volumes:
       - ./romm/mysql_data:/var/lib/mysql
     security_opt:
