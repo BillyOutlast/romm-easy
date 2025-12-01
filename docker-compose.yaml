@@ -26,49 +26,49 @@ services:
       - ./romm/assets:/romm/assets # Uploaded saves, states, etc.
       - ./romm/config:/romm/config # (Optional) Path where config.yml is stored
       #Rom Libaries
-      - ${Apple_Mac_PATH}:/romm/library/Apple_Mac
-      - ${Apple_IOS_PATH}:/romm/library/Apple_IOS
-      - ${Apple_Bandai_Pippin_PATH}:/romm/library/Apple_Bandai_Pippin
-      - ${Apple_II_PATH}:/romm/library/Apple_II
+      - ${Apple_Mac_PATH}:/romm/library/Apple_Mac/roms
+      - ${Apple_IOS_PATH}:/romm/library/Apple_IOS/roms
+      - ${Apple_Bandai_Pippin_PATH}:/romm/library/Apple_Bandai_Pippin/roms
+      - ${Apple_II_PATH}:/romm/library/Apple_II/roms
       #Google Paths
-      - ${Google_Android_PATH}:/romm/library/Android
+      - ${Google_Android_PATH}:/romm/library/Android/roms
       #Microsoft PATHS
-      - ${Microsoft_DOS_PATH}:/romm/library/DOS
-      - ${Microsoft_Windows_PATH}:/romm/library/Windows
-      - ${Microsoft_XBOX_PATH}:/romm/library/XBOX
-      - ${Microsoft_Xbox_360_PATH}:/romm/library/Xbox_360
+      - ${Microsoft_DOS_PATH}:/romm/library/DOS/roms
+      - ${Microsoft_Windows_PATH}:/romm/library/Windows/roms
+      - ${Microsoft_XBOX_PATH}:/romm/library/XBOX/roms
+      - ${Microsoft_Xbox_360_PATH}:/romm/library/Xbox_360/roms
       #Nintendo Paths
-      - ${Nintendo_Gameboy_PATH}:/romm/library/Gameboy
-      - ${Nintendo_Gameboy_Advance_PATH}:/romm/library/Gameboy_Advance
-      - ${Nintendo_Gameboy_Color_PATH}:/romm/library/Gameboy_Color
-      - ${Nintendo_NES_PATH}:/romm/library/NES
-      - ${Nintendo_N64_PATH}:/romm/library/N64
-      - ${Nintendo_3DS_PATH}:/romm/library/3DS
-      - ${Nintendo_New_3DS_PATH}:/romm/library/New_3DS
-      - ${Nintendo_DS_PATH}:/romm/library/DS
-      - ${Nintendo_GameCube_PATH}:/romm/library/GameCube
-      - ${Nintendo_Pokemon_Mini_PATH}:/romm/library/Pokemon_Mini
-      - ${Nintendo_SNES_PATH}:/romm/library/SNES
-      - ${Nintendo_Switch_PATH}:/romm/library/Switch
-      - ${Nintendo_Virtual_Boy_PATH}:/romm/library/Virtual_Boy
-      - ${Nintendo_Wii_PATH}:/romm/library/Wii
-      - ${Nintendo_Wii_U_PATH}:/romm/library/Wii_U
+      - ${Nintendo_Gameboy_PATH}:/romm/library/Gameboy/roms
+      - ${Nintendo_Gameboy_Advance_PATH}:/romm/library/Gameboy_Advance/roms
+      - ${Nintendo_Gameboy_Color_PATH}:/romm/library/Gameboy_Color/roms
+      - ${Nintendo_NES_PATH}:/romm/library/NES/roms
+      - ${Nintendo_N64_PATH}:/romm/library/N64/roms
+      - ${Nintendo_3DS_PATH}:/romm/library/3DS/roms
+      - ${Nintendo_New_3DS_PATH}:/romm/library/New_3DS/roms
+      - ${Nintendo_DS_PATH}:/romm/library/DS/roms
+      - ${Nintendo_GameCube_PATH}:/romm/library/GameCube/roms
+      - ${Nintendo_Pokemon_Mini_PATH}:/romm/library/Pokemon_Mini/roms
+      - ${Nintendo_SNES_PATH}:/romm/library/SNES/roms
+      - ${Nintendo_Switch_PATH}:/romm/library/Switch/roms
+      - ${Nintendo_Virtual_Boy_PATH}:/romm/library/Virtual_Boy/roms
+      - ${Nintendo_Wii_PATH}:/romm/library/Wii/roms
+      - ${Nintendo_Wii_U_PATH}:/romm/library/Wii_U/roms
       #Sony Paths
-      - ${Sony_PlayStation_PATH}:/romm/library/PlayStation
-      - ${Sony_PlayStation_2_PATH}:/romm/library/PlayStation_2
-      - ${Sony_PlayStation_3_PATH}:/romm/library/PlayStation_3
-      - ${Sony_PlayStation_4_PATH}:/romm/library/PlayStation_4
-      - ${Sony_PlayStation_5_PATH}:/romm/library/PlayStation_5
-      - ${Sony_PlayStation_Portable_PATH}:/romm/library/PlayStation_Portable
-      - ${Sony_PlayStation_Vita_PATH}:/romm/library/PlayStation_Vita
+      - ${Sony_PlayStation_PATH}:/romm/library/PlayStation/roms
+      - ${Sony_PlayStation_2_PATH}:/romm/library/PlayStation_2/roms
+      - ${Sony_PlayStation_3_PATH}:/romm/library/PlayStation_3/roms
+      - ${Sony_PlayStation_4_PATH}:/romm/library/PlayStation_4/roms
+      - ${Sony_PlayStation_5_PATH}:/romm/library/PlayStation_5/roms
+      - ${Sony_PlayStation_Portable_PATH}:/romm/library/PlayStation_Portable/roms
+      - ${Sony_PlayStation_Vita_PATH}:/romm/library/PlayStation_Vita/roms
       #SEGA PATHS
-      - ${SEGA_Dreamcast_PATH}:/romm/library/Dreamcast
-      - ${SEGA_Game_Gear_PATH}:/romm/library/Game_Gear
-      - ${SEGA_Master_System_PATH}:/romm/library/Master_System
-      - ${SEGA_Mega_Drive_PATH}:/romm/library/Mega_Drive
-      - ${SEGA_Pico_PATH}:/romm/library/Pico
-      - ${SEGA_Saturn_PATH}:/romm/library/Saturn
-      - ${SEGA_SG_1000_PATH}:/romm/library/SG_1000
+      - ${SEGA_Dreamcast_PATH}:/romm/library/Dreamcast/roms
+      - ${SEGA_Game_Gear_PATH}:/romm/library/Game_Gear/roms
+      - ${SEGA_Master_System_PATH}:/romm/library/Master_System/roms
+      - ${SEGA_Mega_Drive_PATH}:/romm/library/Mega_Drive/roms
+      - ${SEGA_Pico_PATH}:/romm/library/Pico/roms
+      - ${SEGA_Saturn_PATH}:/romm/library/Saturn/roms
+      - ${SEGA_SG_1000_PATH}:/romm/library/SG_1000/roms
     #ports:
     #  - 80:8080
     depends_on:
